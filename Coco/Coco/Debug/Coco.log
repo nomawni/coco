@@ -1,0 +1,15 @@
+﻿  Client.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+  - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+c:\users\kolon\coco\coco\coco\client.cpp(137): error C4996: 'boost::asio::basic_socket<Protocol>::cancel': By default, this function always fails with operation_not_supported when used on Windows XP, Windows Server 2003, or earlier. Consult documentation for details.
+          with
+          [
+              Protocol=boost::asio::ip::tcp
+          ]
+  c:\users\kolon\downloads\boost_1_69_0\boost\asio\basic_socket.hpp(556): note: see declaration of 'boost::asio::basic_socket<Protocol>::cancel'
+          with
+          [
+              Protocol=boost::asio::ip::tcp
+          ]
